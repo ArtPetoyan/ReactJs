@@ -1,0 +1,14 @@
+.span {
+	font-size: 25px;
+	color: rgba(46, 46, 46, 0.6);
+	display: block;
+	padding: 5px;
+}
+.span::selection {
+	background-color:transparent;
+}
+.todoList {
+	border-radius: 10px;
+	font-size: 25px;
+	background-color: rgba(255, 244, 228, 0.652);
+}

@@ -1,0 +1,36 @@
+.todo {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
+}
+.span {
+	padding: 3px;
+	margin-left: 18px;
+	word-break: break-word;
+}
+.span::first-letter {
+	text-transform: capitalize;
+}
+.RiTodoFill {
+	font-size: 1.8rem;
+	margin-left: 10px;
+}
+.completed {
+	background-color: rgba(57, 255, 126, 0.8);
+  	box-shadow: 0 0 5px 0 rgba(57, 255, 126, 0.8);
+	text-decoration: 2px line-through rgba(255, 255, 255, 0.795);
+}
+.checkIcon, .deleteIcon {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.8rem;
+}
+.checkIcon:hover, .deleteIcon:hover {
+	box-shadow: 0 0 8px 0 rgb(83, 83, 83);
+	transform: scale(1.1);
+}

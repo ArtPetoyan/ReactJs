@@ -1,0 +1,38 @@
+.form {
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(255, 244, 228, 0.652);
+	border-radius: 10px;
+}
+.input {
+	padding: 15px;
+	width: 70%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-color: rgb(94, 94, 63);
+	box-shadow: 0 0 5px 1px rgb(94, 94, 63);
+	font-size: 20px;
+	color: rgb(255, 255, 255)
+}
+.input::placeholder {
+	color: rgb(255, 255, 255);
+}
+.input:hover {
+	background-color: rgba(94, 94, 63, 0.9);
+}
+.addBtn {
+	width: 15%;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: lightgray;
+	box-shadow: 0 0 5px 0 lightgray;
+}
+.addBtn:hover {
+	background-color: black;
+	box-shadow: 0 0 5px 0 black;
+	color: lightgray;
+}

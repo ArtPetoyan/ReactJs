@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+.divLoad {
+  width: 50px;
+  height: 50px;
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+  border-left: 5px solid rgba(0, 0, 0, 0);
+  border-right: 5px solid rgba(0, 0, 0, 0);
+  border-bottom: 5px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  margin: 15px auto;
+  animation: load 0.8s 0s linear infinite;
+}
+nav {
+  background-color: bisque;
+  height: 50px;
+}
+a {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  text-decoration: none;
+  margin: 5px;
+}
+.active {
+  color: brown;
+  text-decoration: none;
+}
+.menu {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+.addUser, .editDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+}
+.addUser input[type='text'], .editDiv input[type='text'] {
+  padding: 10px;
+}
+.addUser button {
+  width: 80%;
+  height: 50px;
+  cursor: pointer;
+  background-color: lightsalmon;
+  margin: 10px auto;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.home button[class='add'] {
+  height: 40px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  background-image: linear-gradient(0.375turn, rgb(255, 255, 255) 0%, rgba(119, 117, 0, 0.71) 50%, rgb(255, 255, 255) 100%);
+}
+.home button[class='add']:hover {
+  color: rgb(0, 0, 0);
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  background-image: linear-gradient(0.625turn, rgb(255, 255, 255) 0%, rgba(119, 117, 0, 0.71) 50%, rgb(255, 255, 255) 100%);
+}
+table {
+  margin: 25px auto;
+}
+td {
+    border: 1px solid #333;
+    padding: 5px;
+}
+td[class='btns'] {
+  border-left: none;
+}
+td:nth-child(1) {
+  background-color: rgba(51, 51, 51, 0.526);
+  width: 20px;
+}
+td button {
+  width: 50px;
+  margin: 5px;
+  height: 25px;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: rgba(253, 1, 1, 0.218);
+}
+td button:hover {
+  background-color: rgba(51, 51, 51, 0.283);
+}
+thead,
+tfoot {
+    height: 35px;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+}
+.viewAll, .editBtn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: lightblue;
+  font-size: 16px;
+  font-weight: 700;
+  font-family:'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+.viewAll:hover, .editBtn:hover {
+  background-color: rgb(159, 255, 255);
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
